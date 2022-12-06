@@ -1,0 +1,23 @@
+{
+	"string log": {
+		"prefix": "logst",
+		"body": [
+			"console.log('$1');"
+		],
+		"description": "string log"
+	},
+	"Print to console": {
+		"prefix": "logvar",
+		"body": [
+			"console.log('$1', $1);"
+		],
+		"description": "Log output to console"
+	},
+	"Print object to console": {
+		"prefix": "logobj",
+		"body": [
+			"console.log('$1', JSON.stringify($1, null , 2));"
+		],
+		"description": "Log object to console"
+	}
+}
